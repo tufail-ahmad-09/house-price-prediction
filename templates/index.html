@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="medinc">Median Income:</label>
+        <input type="text" id="medinc" name="medinc" required>
+        
+        <label for="houseage">House Age:</label>
+        <input type="text" id="houseage" name="houseage" required>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

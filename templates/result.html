@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">House Price Prediction</h1>
+        <div class="alert alert-info mt-4">
+            <strong>Predicted House Price:</strong> ${{ predictions | round(2) }}
+        </div>
+        <a href="/" class="btn btn-primary mt-4">Make another prediction</a>
+    </div>
+</body>
+</html>
